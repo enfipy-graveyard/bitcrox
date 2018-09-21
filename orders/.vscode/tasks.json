@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "reveal": "always",
+  "options": {
+    "cwd": "${workspaceRoot}"
+  },
+  "tasks": [
+    {
+      "label": "Generate_Wast",
+      "type": "shell",
+      "dependsOn": ["Generate_Abi"],
+      "command": "sh ${workspaceRoot}/.vscode/scripts/generate_wast.sh ${fileDirname} ${fileBasenameNoExtension}"
+    },
+    {
+      "label": "Generate_Abi",
+      "type": "shell",
+      "command": "sh ${workspaceRoot}/.vscode/scripts/generate_abi.sh ${fileDirname} ${fileBasenameNoExtension}"
+    },
+    {
+      "label": "Deploy",
+      "type": "shell",
+      "dependsOn": ["Generate_Wast"],
+      "command": "sh ${workspaceRoot}/.vscode/scripts/run.sh ${fileDirname} ${fileBasenameNoExtension}"
+    }
+  ]
+}

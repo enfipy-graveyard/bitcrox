@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/home/eos-v1.0/eos/contracts/**",
+        "/home/enfipy/opt/boost/include/**",
+        "/home/eos-v1.0/eos/externals/magic_get/include/**"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/clang++-4.0",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "clang-x64",
+      "browse": {
+        "path": ["${workspaceFolder}"],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      }
+    }
+  ],
+  "version": 4
+}

@@ -29,7 +29,7 @@ public:
   {
     require_auth(from);
 
-    print("Adding item ", S(name));
+    // print("Adding item ", S(name));
 
     _items items(_self, from);
     auto exist = items.find(S(name));
@@ -45,7 +45,7 @@ public:
   // @abi action
   void inc(account_name whose, string name)
   {
-    print("Incrementing item ", S(name));
+    // print("Incrementing item ", S(name));
 
     _items items(_self, whose);
     auto exist = items.find(S(name));
@@ -62,7 +62,7 @@ public:
   {
     require_auth(whose);
 
-    print("Removing item ", S(name));
+    // print("Removing item ", S(name));
 
     _items items(_self, whose);
     auto exist = items.find(S(name));

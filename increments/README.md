@@ -47,3 +47,10 @@ And run it:
 > cleos set contract incrox ../incrox -p incrox@active
 
 Or you can just open this project in `vscode` and enter `F5`
+
+# This smart conract is on Jungle Testnet
+
+> cleos --url http://dev.cryptolions.io:38888 set contract enfipyenfipy ../incrox -p enfipyenfipy
+> cleos --url http://dev.cryptolions.io:38888 get table enfipyenfipy enfipyenfipy items
+> cleos --url http://dev.cryptolions.io:38888 push action enfipyenfipy rem '["enfipyenfipy", "5 Things to do"]' -p enfipyenfipy@active
+> cleos --url http://dev.cryptolions.io:38888 get table enfipyenfipy enfipyenfipy items
