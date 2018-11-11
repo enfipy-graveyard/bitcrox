@@ -1,3 +1,3 @@
-# Tests for Bitcrox exchange
+# Samples for the Optherium
 
-See README.md files in folders for more information
+Folders `-frontend` - `vue` example usage of `EOS Smart Contracts`. See README.md files in folders for more information
